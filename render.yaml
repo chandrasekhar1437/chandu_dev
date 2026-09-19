@@ -11,8 +11,9 @@
       - key: PYTHON_VERSION
         value: 3.11.0
 
-  - type: static_site
+  - type: web
     name: chandu-frontend
+    runtime: static
     rootDir: frontend
     buildCommand: npm install && npm run build
     staticPublishPath: build
